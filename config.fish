@@ -57,6 +57,10 @@ set -x PATH $NRV_QCBOT_PATH/scripts $HOME/bin /opt/ros/indigo/bin $JAVA_HOME/bin
 
 set fish_git_dirty_color red
 
+function catkin_make
+  /opt/ros/indigo/bin/catkin_make -DCMAKE_BUILD_TYPE=RelWithDebInfo
+end
+
 function parse_git_dirty
          git diff --quiet HEAD ^&-
          if test $status = 1
