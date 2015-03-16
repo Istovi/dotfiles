@@ -40,9 +40,9 @@ main = xmonad $ gnomeConfig
     }
     `additionalKeysP`(
         [ ("M-c", kill)
-        , ("M-n", spawn "gnome-do")
-        , ("M-M1-n", spawn "dmenu_run")
-        , ("M-S-n", spawn "gmrun")
+        , ("M-n", spawn "yeganesh_run.sh")
+        , ("M-M1-n", spawn "gnome-do")
+        , ("M-S-n", spawn "dmenu_run")
         , ("M-;", spawn myTerminal)
         , ("M-M1-;", spawn "terminator")
         , ("M-b", spawn "google-chrome")
